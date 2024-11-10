@@ -2,6 +2,10 @@
 
 Scholarversary is a milestone-finder for academic careers through the (limited!) lens of publishing.
 
+```
+pip install scholarversary
+```
+
 ## Citation Milestones
 
 ```python
