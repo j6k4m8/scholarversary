@@ -19,6 +19,8 @@ sv.Scholarversary().citations()
 ```python
 import pandas as pd
 
+wcby = s.get_author_work_cites_by_year("Jordan Matelsky", index_by="title")
+
 (
     pd.DataFrame(wcby)
     .fillna(0)
@@ -51,7 +53,6 @@ s.get_author_citation_milestone_dates("Jordan Matelsky")
 ## Per-Paper Metrics
 
 ```python
-wcby = s.get_author_work_cites_by_year("Jordan Matelsky", index_by="title")
 df = pd.DataFrame(wcby).fillna(0).astype(int).sort_index()
 # Get columnwise cumulatives:
 dfc = df.cumsum(axis=0)
